@@ -1,0 +1,913 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Medinovita - Libin",
+		"_postman_id": "a46eef16-5de6-9fff-494b-a21eea0630b3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai MediCity/city/Indian/IVF1/posthospital",
+			"request": {
+				"url": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai MediCity/city/Indian/IVF1/posthospital",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXIiLCJpYXQiOjE1MDI3MjcxMjh9.WW9L8cXcasrXBcgNYfLTaWQkMuhrPuraZbvjqF_-gbw",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "doctorName",
+							"value": "dr.vp1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profilePicDirectory",
+							"value": "smdir",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "medinovitaDoctorRating",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specialityName",
+							"value": "smspecila",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/v1/add/hospitalrecord/posthospital",
+			"request": {
+				"url": "http://localhost:1337/api/v1/add/hospitalrecord/posthospital",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdEhvc3BpdGFsIiwiaWF0IjoxNTAyMjEzOTcwfQ.zh_YI9XOcKKYU8a3h7LSzfU5q3Mx8nxxSfKNTKnwbXA",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hospitalname",
+							"value": "Renai",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_website",
+							"value": "www.xyz.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_contactpersonname",
+							"value": "libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_addressline1",
+							"value": "Line1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_city",
+							"value": "Kochi",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_country",
+							"value": "India",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_postalcode",
+							"value": "686577",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "accreditation_jci",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "accreditation_nabh",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "accreditation_nabl",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalrating_userrating",
+							"value": "4",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "hospitalrating_medinovitarating",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "procedureName",
+							"value": "Root Canal",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "costUpperBound",
+							"value": "10000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "costLowerBound",
+							"value": "20000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "departmentName",
+							"value": "Dental",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "doctorName",
+							"value": "Dr.Gerorge",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profilePicDirectory",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "medinovitaDoctorRating",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specialityName",
+							"value": "MBBS,MD",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/v1/update/basicHospitalDetails/Renai MediCity/city/Indian/puthospital",
+			"request": {
+				"url": "http://localhost:1337/api/v1/update/basicHospitalDetails/Renai/Kochi/India/puthospital",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicHV0VXNlciIsImlhdCI6MTUwMzIxNTIzNH0.3lrLwwnHxJL4zjo7e1ntm8lvuNv8IycZlFqR7eoRfAk",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hospitalcontact.addressline1",
+							"value": "address line new",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/v1/add/newtreatment/Renai MediCity/city/Indian/posthospital",
+			"request": {
+				"url": "http://localhost:1337/api/v1/add/newtreatment/Renai/Kochi/India/posthospital",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXIiLCJpYXQiOjE1MDI3MjcxMjh9.WW9L8cXcasrXBcgNYfLTaWQkMuhrPuraZbvjqF_-gbw",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "procedureName",
+							"value": "IVF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "costUpperBound",
+							"value": "25000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "costLowerBound",
+							"value": "10000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "doctorName",
+							"value": "Dr.vp2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profilePicDirectory",
+							"value": "smdir1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "medinovitaDoctorRating",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specialityName",
+							"value": "MBBS",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "departmentName",
+							"value": "Gynic",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/v1/update/userInfo/nit.libin@gmail.com/putuser",
+			"request": {
+				"url": "http://localhost:1337/api/v1/update/userInfo/nit.libin@gmail.com/putuser",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicHV0VXNlciIsImlhdCI6MTUwMjAzMDIyNH0.o-lu607gGDqcNBDneCEDcLJZodAiWsHtccvIdbG3rzc",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "primaryphonenumber",
+							"value": "9742123446",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "secondaryphonenumber",
+							"value": "9743122233",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/v1/add/userInfo/postuser",
+			"request": {
+				"url": "http://localhost:1337/api/v1/add/userInfo/postuser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXIiLCJpYXQiOjE1MDE5OTc2MDd9.Wn1iexjdOdrNTAef69QCzUXveG5_F8-kIzIetCGIfpg",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "emailID",
+							"value": "nit.libin@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "loginPassword",
+							"value": "medinovita",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isdCode",
+							"value": "91",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "primaryPhonenumber",
+							"value": "9740177277",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "secondaryPhonenumber",
+							"value": "9740177377",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "whatsappPhonenumber",
+							"value": "9740177477",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "userTitle",
+							"value": "Mr.",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "middleName",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nickName",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Sebastian",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "dateofbirth",
+							"value": "18-03-1985",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "preferredContacttime",
+							"value": "Morning",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "preferredContactmethod",
+							"value": "Phone",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "emailVerified",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "userPicdir",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "userType",
+							"value": "Patient",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "agentType",
+							"value": "Individual",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressType",
+							"value": "Communication",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "addressLine1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "addressLine2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "City",
+							"value": "City",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "postalCode",
+							"value": "686577",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "residingcountry",
+							"value": "UAE",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "landmark",
+							"value": "nothing",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/v1/protected/token",
+			"request": {
+				"url": "http://localhost:1337/api/v1/protected/token/POSTENQUIRY",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai/Kochi/India/IVF/posthospital",
+			"request": {
+				"url": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai/Kochi/India/IVF/posthospital",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXIiLCJpYXQiOjE1MDI3MjcxMjh9.WW9L8cXcasrXBcgNYfLTaWQkMuhrPuraZbvjqF_-gbw",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "doctorName",
+							"value": "Dr.vp6",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profilePicDirectory",
+							"value": "dir1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "medinovitaDoctorRating",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specialityName",
+							"value": "MD",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "departmentName",
+							"value": "Gynic",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/v1/submit/enquiry/postenquiry",
+			"request": {
+				"url": "http://localhost:1337/api/v1/submit/response/nit.libin@gmail.com/117727175843977/postenquiry",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXJFbnF1aXJ5IiwiaWF0IjoxNTAzNzQzMjM4fQ.Sitf19o-2tcYX4ACdEl6Oq84jcKUB3xXdPs9gc0L_e4",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mediNovitaResponse",
+							"value": "medinovita response",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "respondedBy",
+							"value": "Libin Sebastian",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "contactedMethod",
+							"value": "Both",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "emailResponseSent",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nextFollowUpDate",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "followUpAssignee",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "followUpNote",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/v1/submit/response/nit.libin@gmail.com/117727231145190/postenquiry",
+			"request": {
+				"url": "http://localhost:1337/api/v1/submit/response/nit.libin@gmail.com/117727231145190/postenquiry",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXJFbnF1aXJ5IiwiaWF0IjoxNTAzNzQzMjM4fQ.Sitf19o-2tcYX4ACdEl6Oq84jcKUB3xXdPs9gc0L_e4",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mediNovitaResponse",
+							"value": "medinovita response",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "respondedBy",
+							"value": "Libin Sebastian",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "contactedMethod",
+							"value": "Both",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "emailResponseSent",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nextFollowUpDate",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "followUpAssignee",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "followUpNote",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getTreatmentList",
+			"request": {
+				"url": "http://localhost:1337/api/v1/getTreamentlist/surgery/getTreatment",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZ2V0VHJlYXRtZW50IiwiaWF0IjoxNTAyMzMyNDQ2fQ.MYdsGTNxUsJFNbWWda9gwCYvPZflfdDnWiDrA-kO-2U",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "token",
+			"request": {
+				"url": "localhost:1337/api/v1/protected/token/getTreatment",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "searchHospital",
+			"request": {
+				"url": "http://localhost:1337/api/v1/searchHospitaldetails/IVF/searchHospital",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZ2V0VHJlYXRtZW50IiwiaWF0IjoxNTAyMzMyNDQ2fQ.MYdsGTNxUsJFNbWWda9gwCYvPZflfdDnWiDrA-kO-2U",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getFeaturedtreatments",
+			"request": {
+				"url": "localhost:1337/api/v1/getFeaturedtreatments/GETFTDTREATMENT",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiR0VURlREVFJFQVRNRU5UIiwiaWF0IjoxNTAzNDkyMzkzfQ.TmoIr1Gic9lEgQvHfWQAB1zDxf2mVrynoPiyo26h-A8",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"targetName\" : \"ZQAMTV\",\r\n   \"numberOfReturnParams\" : 1,\r\n   \"arguments\":[\"POS\", \"ACN:290815793,CID:12450551155,TAMT:10,MTDNME:KMART3454,CITY:PHILADELPHIA,STATE:PA,CNTRY:US,BIT18:5310,BIT32:1561,BIT48:000067190034546,BIT120:KMART3454\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "gethighlighttreatments",
+			"request": {
+				"url": "localhost:1337/api/v1/gethighlighttreatments/10/2/GETHIGHLIGHTTRMT",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiR0VUQUJUTUVESUNBTCIsImlhdCI6MTUwMzcxMTk0M30.pkh5o5sqfoBCfK3InpyuA3K98cvqNdctquRNiQN1kR8",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"targetName\" : \"ZQAMTV\",\r\n   \"numberOfReturnParams\" : 1,\r\n   \"arguments\":[\"POS\", \"ACN:290815793,CID:12450551155,TAMT:10,MTDNME:KMART3454,CITY:PHILADELPHIA,STATE:PA,CNTRY:US,BIT18:5310,BIT32:1561,BIT48:000067190034546,BIT120:KMART3454\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getaboutMedical/GETABTMEDICAL",
+			"request": {
+				"url": "localhost:1337/api/v1/getaboutMedical/GETABTMEDICAL",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiR0VUQUJUTUVESUNBTCIsImlhdCI6MTUwMzcxMTk0M30.pkh5o5sqfoBCfK3InpyuA3K98cvqNdctquRNiQN1kR8",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"targetName\" : \"ZQAMTV\",\r\n   \"numberOfReturnParams\" : 1,\r\n   \"arguments\":[\"POS\", \"ACN:290815793,CID:12450551155,TAMT:10,MTDNME:KMART3454,CITY:PHILADELPHIA,STATE:PA,CNTRY:US,BIT18:5310,BIT32:1561,BIT48:000067190034546,BIT120:KMART3454\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
