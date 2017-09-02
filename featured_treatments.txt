@@ -1,0 +1,733 @@
+/* featured treatments */
+{
+    "_id" : ObjectId("5994f8cdf8993b1a0ab58526"),
+    "img" : "sample image path",
+    "svgImg" : "sample image",
+    "shortContent" : "ayurvedic treatment to rejuvenate your mind and body",
+    "title" : "AYURVEDIC"
+}
+
+/* highlight_sections */
+{
+    "_id" : ObjectId("59a0d6d84d34e34909dfe1e1"),
+    "imgSrc" : "./assests/images/services/index-medical/first-aid-kit.svg",
+    "altText" : "Emergency",
+    "title" : "Emergency",
+    "content" : "RWFFSFSFGsdassdasdas fsdfsfsdf fsdfsdf fsfdsfs fsdfsfsf fsdfsdf fsfdsfs fsdfsd"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("59a0d7a14d34e34909dfe231"),
+    "imgSrc" : "./assests/images/services/index-medical/second-aid-kit.svg",
+    "altText" : "Dental",
+    "title" : "Dental",
+    "content" : "ascfsdfaerwq fsdfsfsdf fsdfsdf fsfdsfs fsdfsfsf fsdfsdf fsfdsfs fsdfsd"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("59a0d7ce4d34e34909dfe241"),
+    "imgSrc" : "./assests/images/services/index-medical/third-aid-kit.svg",
+    "altText" : "Implant",
+    "title" : "Implant",
+    "content" : "plokjmnhbgbhf fsdfsfsdf fsdfsdf fsfdsfs fsdfsfsf fsdfsdf fsfdsfs fsdfsd"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("59a0d7fd4d34e34909dfe255"),
+    "imgSrc" : "./assests/images/myservices/index-medical/third-aid-kit.svg",
+    "altText" : "Eye",
+    "title" : "Eye",
+    "content" : "plokjmnhbgbhf fsdfsfsdf fsdfsdf fsfdsfs fsdfsfsf fsdfsdf fsfdsfs fsdfsd"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("59a0d8214d34e34909dfe266"),
+    "imgSrc" : "./assests/images/myservices/index-medical/third-aid-kit.svg",
+    "altText" : "Ortho",
+    "title" : "Ortho",
+    "content" : "gtrdvfdrvv fsdfsfsdf fsdfsdf fsfdsfs fsdfsfsf fsdfsdf fsfdsfs fsdfsd"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("59a0d8604d34e34909dfe280"),
+    "imgSrc" : "./assests/images/myservices/index-medical/fourth-aid-kit.svg",
+    "altText" : "Gyno",
+    "title" : "Gynocology",
+    "content" : "gtrdvfdrvv a dfgdf gsdfg sdfg vxcafew fsfdsfs fsdfsd"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("59a0d88f4d34e34909dfe293"),
+    "imgSrc" : "./assests/images/myservices/index-medical/ayurvedic-aid-kit.svg",
+    "altText" : "Ayurvedic",
+    "title" : "Ayurvedics",
+    "content" : "ayurvedic a dfgdf gsdfg sdfg vxcafew fsfdsfs fsdfsd"
+}
+
+/* hospital doctor details */
+
+/* 1 */
+{
+    "_id" : ObjectId("5980f658591b475098e9465e"),
+    "hospitalID" : 10039,
+    "hospitalName" : "Aster MediCity",
+    "updated_at" : ISODate("2017-08-01T21:44:56.390Z"),
+    "Treatment" : [ 
+        {
+            "name" : "Dental",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10050,
+            "procedureid" : 10043,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("5980f658591b475098e9465f"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10042,
+                    "doctorName" : "Chris",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("5980f658591b475098e94660"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("5980f658591b475098e94662"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality1",
+                            "_id" : ObjectId("5980f658591b475098e94661")
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalRating" : {
+        "medinovitaRating" : 4,
+        "userRating" : [ 
+            4
+        ]
+    },
+    "Accreditation" : {
+        "NABL" : "Y",
+        "NABH" : "Y",
+        "JCI" : "Y"
+    },
+    "hospitalContact" : {
+        "country" : "India",
+        "PostalCode" : 23456,
+        "City" : "Kochi",
+        "addressLine2" : "addr 22",
+        "addressLine1" : "addr 12",
+        "contactPersonname" : "Govind",
+        "website" : "www.abcdc.com"
+    },
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5980f65c591b475098e94663"),
+    "hospitalID" : 10040,
+    "hospitalName" : "Aster MediCity",
+    "updated_at" : ISODate("2017-08-01T21:45:00.309Z"),
+    "Treatment" : [ 
+        {
+            "name" : "Heart Surgery",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10050,
+            "procedureid" : 10043,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("5980f65c591b475098e94664"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10042,
+                    "doctorName" : "Chris",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("5980f65c591b475098e94665"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("5980f65c591b475098e94667"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality1",
+                            "_id" : ObjectId("5980f65c591b475098e94666")
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalRating" : {
+        "medinovitaRating" : 4,
+        "userRating" : [ 
+            4
+        ]
+    },
+    "Accreditation" : {
+        "NABL" : "Y",
+        "NABH" : "Y",
+        "JCI" : "Y"
+    },
+    "hospitalContact" : {
+        "country" : "India",
+        "PostalCode" : 23456,
+        "City" : "Kochi",
+        "addressLine2" : "addr 22",
+        "addressLine1" : "addr 12",
+        "contactPersonname" : "Govind",
+        "website" : "www.abcdc.com"
+    },
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5980f68b591b475098e94668"),
+    "hospitalID" : 10041,
+    "hospitalName" : "Aster MediCity",
+    "updated_at" : ISODate("2017-08-01T21:45:47.743Z"),
+    "Treatment" : [ 
+        {
+            "name" : "Face Implant",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10050,
+            "procedureid" : 10043,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("5980f68b591b475098e94669"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10042,
+                    "doctorName" : "Chris",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("5980f68b591b475098e9466a"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("5980f68b591b475098e9466c"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality1",
+                            "_id" : ObjectId("5980f68b591b475098e9466b")
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalRating" : {
+        "medinovitaRating" : 4,
+        "userRating" : [ 
+            4
+        ]
+    },
+    "Accreditation" : {
+        "NABL" : "Y",
+        "NABH" : "Y",
+        "JCI" : "Y"
+    },
+    "hospitalContact" : {
+        "country" : "India",
+        "PostalCode" : 23456,
+        "City" : "Kochi",
+        "addressLine2" : "addr 22",
+        "addressLine1" : "addr 12",
+        "contactPersonname" : "Govind",
+        "website" : "www.abcdc.com"
+    },
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5980f68e591b475098e9466d"),
+    "hospitalID" : 10042,
+    "hospitalName" : "Aster MediCity",
+    "updated_at" : ISODate("2017-08-01T21:45:50.496Z"),
+    "Treatment" : [ 
+        {
+            "name" : "Breast Implant",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10050,
+            "procedureid" : 10043,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("5980f68e591b475098e9466e"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10042,
+                    "doctorName" : "Chris",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("5980f68e591b475098e9466f"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("5980f68e591b475098e94671"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality1",
+                            "_id" : ObjectId("5980f68e591b475098e94670")
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalRating" : {
+        "medinovitaRating" : 4,
+        "userRating" : [ 
+            4
+        ]
+    },
+    "Accreditation" : {
+        "NABL" : "Y",
+        "NABH" : "Y",
+        "JCI" : "Y"
+    },
+    "hospitalContact" : {
+        "country" : "India",
+        "PostalCode" : 23456,
+        "City" : "Kochi",
+        "addressLine2" : "addr 22",
+        "addressLine1" : "addr 12",
+        "contactPersonname" : "Govind",
+        "website" : "www.abcdc.com"
+    },
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("59828fe55aaf423858fdaa05"),
+    "hospitalID" : 10043,
+    "hospitalName" : "Renai MediCity",
+    "updated_at" : ISODate("2017-08-03T02:52:21.915Z"),
+    "Treatment" : [ 
+        {
+            "name" : "Gum Surgery",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10050,
+            "procedureid" : 10043,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("59828fe55aaf423858fdaa06"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10042,
+                    "doctorName" : "Thomas",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("59828fe55aaf423858fdaa07"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("59828fe55aaf423858fdaa09"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality",
+                            "_id" : ObjectId("59828fe55aaf423858fdaa08")
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalRating" : {
+        "medinovitaRating" : 4,
+        "userRating" : [ 
+            4
+        ]
+    },
+    "Accreditation" : {
+        "NABL" : "Y",
+        "NABH" : "Y",
+        "JCI" : "Y"
+    },
+    "hospitalContact" : {
+        "country" : "USA",
+        "PostalCode" : 123456,
+        "City" : "city",
+        "addressLine2" : "addr 2",
+        "addressLine1" : "addr 1",
+        "contactPersonname" : "libin",
+        "website" : "www.abcd.com"
+    },
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("598295717f22120230e1a8e9"),
+    "hospitalID" : 10044,
+    "hospitalName" : "Renai MediCity",
+    "updated_at" : ISODate("2017-08-03T03:16:01.909Z"),
+    "Treatment" : [ 
+        {
+            "name" : "Root Canal",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10051,
+            "procedureid" : 10044,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("598295717f22120230e1a8ea"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10043,
+                    "doctorName" : "Thomas",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("598295717f22120230e1a8eb"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("598295717f22120230e1a8ed"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality",
+                            "_id" : ObjectId("598295717f22120230e1a8ec")
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalRating" : {
+        "medinovitaRating" : 4,
+        "userRating" : [ 
+            4
+        ]
+    },
+    "Accreditation" : {
+        "NABL" : "Y",
+        "NABH" : "Y",
+        "JCI" : "Y"
+    },
+    "hospitalContact" : {
+        "country" : "SriLanka",
+        "PostalCode" : 123456,
+        "City" : "city",
+        "addressLine2" : "addr 2",
+        "addressLine1" : "addr 1",
+        "contactPersonname" : "libin",
+        "website" : "www.abcd.com"
+    },
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("598296ff35c40b2cc480fd3e"),
+    "hospitalID" : 10045,
+    "hospitalName" : "Renai MediCity",
+    "updated_at" : ISODate("2017-08-03T03:22:39.041Z"),
+    "Treatment" : [ 
+        {
+            "name" : "Hair Implant",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10052,
+            "procedureid" : 10045,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("598296ff35c40b2cc480fd3f"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10044,
+                    "doctorName" : "Thomas",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("598296ff35c40b2cc480fd40"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("598296ff35c40b2cc480fd42"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality",
+                            "_id" : ObjectId("598296ff35c40b2cc480fd41")
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalRating" : {
+        "medinovitaRating" : 4,
+        "userRating" : [ 
+            4
+        ]
+    },
+    "Accreditation" : {
+        "NABL" : "Y",
+        "NABH" : "Y",
+        "JCI" : "Y"
+    },
+    "hospitalContact" : {
+        "country" : "USA",
+        "PostalCode" : 123456,
+        "City" : "city",
+        "addressLine2" : "addr 2",
+        "addressLine1" : "addr 1",
+        "contactPersonname" : "libin",
+        "website" : "www.abcd.com"
+    },
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("598bbb563678d258b0881d31"),
+    "hospitalID" : 10046,
+    "hospitalName" : "Renai MediCity",
+    "updated_at" : ISODate("2017-08-10T01:48:06.334Z"),
+    "Treatment" : [ 
+        {
+            "name" : "IVF",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10053,
+            "procedureid" : 10046,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("598bbb563678d258b0881d32"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10045,
+                    "doctorName" : "Thomas",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("598bbb563678d258b0881d33"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("598bbb563678d258b0881d35"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality",
+                            "_id" : ObjectId("598bbb563678d258b0881d34")
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalRating" : {
+        "medinovitaRating" : 4,
+        "userRating" : [ 
+            4
+        ]
+    },
+    "Accreditation" : {
+        "NABL" : "Y",
+        "NABH" : "Y",
+        "JCI" : "Y"
+    },
+    "hospitalContact" : {
+        "country" : "Turkey",
+        "PostalCode" : 123456,
+        "City" : "city",
+        "addressLine2" : "addr 2",
+        "addressLine1" : "addr 1",
+        "contactPersonname" : "libin",
+        "website" : "www.abcd.com"
+    },
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("598faa1612f16bc90c99e27d"),
+    "hospitalID" : 10072,
+    "hospitalName" : "Ayush MediCity",
+    "updated_at" : ISODate("2017-08-10T01:48:06.334Z"),
+    "Treatment" : [ 
+        {
+            "name" : "IVF",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10059,
+            "procedureid" : 10055,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("598bbb563678d258b0881d32"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10061,
+                    "doctorName" : "Thomas",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("598bbb563678d258b0881d33"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("598bbb563678d258b0881d35"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality",
+                            "_id" : ObjectId("598bbb563678d258b0881d34")
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name" : "Dental",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10061,
+            "procedureid" : 10055,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("598bbb563678d258b0881d32"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10081,
+                    "doctorName" : "Thomas",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("598bbb563678d258b0881d33"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("598bbb563678d258b0881d35"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality",
+                            "_id" : ObjectId("598bbb563678d258b0881d34")
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name" : "Root Dental",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10061,
+            "procedureid" : 10055,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("598bbb563678d258b0881d32"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10081,
+                    "doctorName" : "Thomas",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("598bbb563678d258b0881d33"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("598bbb563678d258b0881d35"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality",
+                            "_id" : ObjectId("598bbb563678d258b0881d34")
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name" : "Hair Dental",
+            "costUpperBound" : 10000,
+            "costLowerBound" : 8000,
+            "departmentId" : 10061,
+            "procedureid" : 10055,
+            "departmentName" : "Dental",
+            "_id" : ObjectId("598bbb563678d258b0881d32"),
+            "doctor" : [ 
+                {
+                    "doctorId" : 10081,
+                    "doctorName" : "Thomas",
+                    "profilepicdir" : "some directory",
+                    "_id" : ObjectId("598bbb563678d258b0881d33"),
+                    "DoctorUserRating" : [ 
+                        {
+                            "userId" : 1234,
+                            "_id" : ObjectId("598bbb563678d258b0881d35"),
+                            "userRating" : 4
+                        }
+                    ],
+                    "medinovitadoctorRating" : 4,
+                    "speciality" : [ 
+                        {
+                            "specialityName" : "Some speciality",
+                            "_id" : ObjectId("598bbb563678d258b0881d34")
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalRating" : {
+        "medinovitaRating" : 4,
+        "userRating" : [ 
+            4
+        ]
+    },
+    "Accreditation" : {
+        "NABL" : "Y",
+        "NABH" : "Y",
+        "JCI" : "Y"
+    },
+    "hospitalContact" : {
+        "country" : "India",
+        "PostalCode" : 123456,
+        "City" : "city",
+        "addressLine2" : "addr 2",
+        "addressLine1" : "addr 1",
+        "contactPersonname" : "libin",
+        "website" : "www.abcd.com"
+    },
+    "__v" : 0
+}
+
+/* medical_Sections */
+
+/* 1 */
+{
+    "_id" : ObjectId("59a0d27a4d34e34909dfe019"),
+    "aboutSubTitle" : "medical section title",
+    "aboutContent" : "Medical section is used for the testing"
+}
