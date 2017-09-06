@@ -1,14 +1,14 @@
 {
 	"variables": [],
 	"info": {
-		"name": "Medinovita - Libin",
+		"name": "Medinovita",
 		"_postman_id": "a46eef16-5de6-9fff-494b-a21eea0630b3",
-		"description": "",
+		"description": "API collection powering medinovita application",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai MediCity/city/Indian/IVF1/posthospital",
+			"name": "Add Doctors Offering to existing hospital",
 			"request": {
 				"url": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai MediCity/city/Indian/IVF1/posthospital",
 				"method": "POST",
@@ -63,7 +63,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/v1/add/hospitalrecord/posthospital",
+			"name": "Add Hospital Record",
 			"request": {
 				"url": "http://localhost:1337/api/v1/add/hospitalrecord/posthospital",
 				"method": "POST",
@@ -216,7 +216,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/v1/update/basicHospitalDetails/Renai MediCity/city/Indian/puthospital",
+			"name": "Update Hospital Details",
 			"request": {
 				"url": "http://localhost:1337/api/v1/update/basicHospitalDetails/Renai/Kochi/India/puthospital",
 				"method": "PUT",
@@ -253,7 +253,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/v1/add/newtreatment/Renai MediCity/city/Indian/posthospital",
+			"name": "New Treatment to existing hospital",
 			"request": {
 				"url": "http://localhost:1337/api/v1/add/newtreatment/Renai/Kochi/India/posthospital",
 				"method": "POST",
@@ -332,7 +332,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/v1/update/userInfo/nit.libin@gmail.com/putuser",
+			"name": "Update user info",
 			"request": {
 				"url": "http://localhost:1337/api/v1/update/userInfo/nit.libin@gmail.com/putuser",
 				"method": "PUT",
@@ -375,7 +375,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/v1/add/userInfo/postuser",
+			"name": "Add new user",
 			"request": {
 				"url": "http://localhost:1337/api/v1/add/userInfo/postuser",
 				"method": "POST",
@@ -562,7 +562,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/v1/protected/token",
+			"name": "Token API",
 			"request": {
 				"url": "http://localhost:1337/api/v1/protected/token/POSTENQUIRY",
 				"method": "GET",
@@ -573,7 +573,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai/Kochi/India/IVF/posthospital",
+			"name": "Add Doctprs Offering Treatment",
 			"request": {
 				"url": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai/Kochi/India/IVF/posthospital",
 				"method": "POST",
@@ -634,7 +634,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/v1/submit/enquiry/postenquiry",
+			"name": "Post Enquiry",
 			"request": {
 				"url": "http://localhost:1337/api/v1/submit/response/nit.libin@gmail.com/117727175843977/postenquiry",
 				"method": "POST",
@@ -707,7 +707,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/v1/submit/response/nit.libin@gmail.com/117727231145190/postenquiry",
+			"name": "Response Enquiry",
 			"request": {
 				"url": "http://localhost:1337/api/v1/submit/response/nit.libin@gmail.com/117727231145190/postenquiry",
 				"method": "POST",
@@ -780,7 +780,7 @@
 			"response": []
 		},
 		{
-			"name": "getTreatmentList",
+			"name": "Get Treatment List",
 			"request": {
 				"url": "http://localhost:1337/api/v1/getTreamentlist/surgery/getTreatment",
 				"method": "GET",
@@ -802,18 +802,7 @@
 			"response": []
 		},
 		{
-			"name": "token",
-			"request": {
-				"url": "localhost:1337/api/v1/protected/token/getTreatment",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "searchHospital",
+			"name": "Search Hospital based on Treatment",
 			"request": {
 				"url": "http://localhost:1337/api/v1/searchHospitaldetails/IVF/searchHospital",
 				"method": "GET",
@@ -835,7 +824,7 @@
 			"response": []
 		},
 		{
-			"name": "getFeaturedtreatments",
+			"name": "Get Featured Treatments",
 			"request": {
 				"url": "localhost:1337/api/v1/getFeaturedtreatments/GETFTDTREATMENT",
 				"method": "GET",
@@ -860,7 +849,7 @@
 			"response": []
 		},
 		{
-			"name": "gethighlighttreatments",
+			"name": "Get highlight Treatments",
 			"request": {
 				"url": "localhost:1337/api/v1/gethighlighttreatments/10/2/GETHIGHLIGHTTRMT",
 				"method": "GET",
@@ -885,7 +874,7 @@
 			"response": []
 		},
 		{
-			"name": "getaboutMedical/GETABTMEDICAL",
+			"name": "Get Abount MEdical SEction",
 			"request": {
 				"url": "localhost:1337/api/v1/getaboutMedical/GETABTMEDICAL",
 				"method": "GET",
@@ -904,6 +893,200 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n   \"targetName\" : \"ZQAMTV\",\r\n   \"numberOfReturnParams\" : 1,\r\n   \"arguments\":[\"POS\", \"ACN:290815793,CID:12450551155,TAMT:10,MTDNME:KMART3454,CITY:PHILADELPHIA,STATE:PA,CNTRY:US,BIT18:5310,BIT32:1561,BIT48:000067190034546,BIT120:KMART3454\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post OfficeLocation",
+			"request": {
+				"url": "http://localhost:1337/api/v1/post/officelocations/officelocation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT0ZGSUNFTE9DQVRJT04iLCJpYXQiOjE1MDQ1MjM2ODl9.P6Fep4p6vOve-gZrdW6w5CMdgIrVg76yy6fb8ocwUiM",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "country",
+							"value": "Australia",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Melbourne",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "Navi Mumbai",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeType",
+							"value": "Commercial",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "landMark",
+							"value": "Nera Lulu Mall 1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "postCode",
+							"value": "682021",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeEmailId",
+							"value": "abcd@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeContactNumber",
+							"value": "9740177277",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "contactPerson",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeTimings",
+							"value": "Mon-Sat 9 Am - 5PM IST",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get OfficeLocation",
+			"request": {
+				"url": "http://localhost:1337/api/v1/get/officelocations/officelocation",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT0ZGSUNFTE9DQVRJT04iLCJpYXQiOjE1MDQ1MjM2ODl9.P6Fep4p6vOve-gZrdW6w5CMdgIrVg76yy6fb8ocwUiM",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "country",
+							"value": "USA",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Newyork",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "Navi Mumbai",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeType",
+							"value": "Commercial",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "landMark",
+							"value": "Nera Lulu Mall 1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "postCode",
+							"value": "682021",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeEmailId",
+							"value": "abcd@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeContactNumber",
+							"value": "9740177277",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "contactPerson",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeTimings",
+							"value": "Mon-Sat 9 Am - 5PM IST",
+							"description": "",
+							"type": "text"
+						}
+					]
 				},
 				"description": ""
 			},
