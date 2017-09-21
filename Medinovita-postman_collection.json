@@ -10,7 +10,7 @@
 		{
 			"name": "Add Doctors Offering to existing hospital",
 			"request": {
-				"url": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai MediCity/city/Indian/IVF1/posthospital",
+				"url": "{{URL}}/api/v1/add/doctorsofferingtreatment/Renai MediCity/city/Indian/IVF1/posthospital",
 				"method": "POST",
 				"header": [
 					{
@@ -218,7 +218,7 @@
 		{
 			"name": "Update Hospital Details",
 			"request": {
-				"url": "http://localhost:1337/api/v1/update/basicHospitalDetails/Renai/Kochi/India/puthospital",
+				"url": "{{URL}}/api/v1/update/basicHospitalDetails/Renai/Kochi/India/puthospital",
 				"method": "PUT",
 				"header": [
 					{
@@ -255,7 +255,7 @@
 		{
 			"name": "New Treatment to existing hospital",
 			"request": {
-				"url": "http://localhost:1337/api/v1/add/newtreatment/Renai/Kochi/India/posthospital",
+				"url": "{{URL}}/api/v1/add/newtreatment/Renai/Kochi/India/posthospital",
 				"method": "POST",
 				"header": [
 					{
@@ -334,7 +334,7 @@
 		{
 			"name": "Update user info",
 			"request": {
-				"url": "http://localhost:1337/api/v1/update/userInfo/nit.libin@gmail.com/putuser",
+				"url": "{{URL}}/api/v1/update/userInfo/nit.libin@gmail.com/putuser",
 				"method": "PUT",
 				"header": [
 					{
@@ -377,7 +377,7 @@
 		{
 			"name": "Add new user",
 			"request": {
-				"url": "http://localhost:1337/api/v1/add/userInfo/postuser",
+				"url": "{{URL}}/api/v1/add/userInfo/postuser",
 				"method": "POST",
 				"header": [
 					{
@@ -564,7 +564,7 @@
 		{
 			"name": "Token API",
 			"request": {
-				"url": "http://localhost:1337/api/v1/protected/token/POSTENQUIRY",
+				"url": "{{URL}}/api/v1/protected/token/POSTENQUIRY",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -575,7 +575,7 @@
 		{
 			"name": "Add Doctprs Offering Treatment",
 			"request": {
-				"url": "http://localhost:1337/api/v1/add/doctorsofferingtreatment/Renai/Kochi/India/IVF/posthospital",
+				"url": "{{URL}}/api/v1/add/doctorsofferingtreatment/Renai/Kochi/India/IVF/posthospital",
 				"method": "POST",
 				"header": [
 					{
@@ -636,7 +636,7 @@
 		{
 			"name": "Post Enquiry",
 			"request": {
-				"url": "http://localhost:1337/api/v1/submit/response/nit.libin@gmail.com/117727175843977/postenquiry",
+				"url": "{{URL}}/api/v1/submit/response/nit.libin@gmail.com/117727175843977/postenquiry",
 				"method": "POST",
 				"header": [
 					{
@@ -709,7 +709,7 @@
 		{
 			"name": "Response Enquiry",
 			"request": {
-				"url": "http://localhost:1337/api/v1/submit/response/nit.libin@gmail.com/117727231145190/postenquiry",
+				"url": "{{URL}}/api/v1/submit/response/nit.libin@gmail.com/117727231145190/postenquiry",
 				"method": "POST",
 				"header": [
 					{
@@ -782,7 +782,7 @@
 		{
 			"name": "Get Treatment List",
 			"request": {
-				"url": "http://localhost:1337/api/v1/getTreamentlist/surgery/getTreatment",
+				"url": "{{URL}}/api/v1/getTreamentlist/surgery/getTreatment",
 				"method": "GET",
 				"header": [
 					{
@@ -804,7 +804,7 @@
 		{
 			"name": "Search Hospital based on Treatment",
 			"request": {
-				"url": "http://localhost:1337/api/v1/searchHospitaldetails/IVF/searchHospital",
+				"url": "{{URL}}/api/v1/searchHospitaldetails/Dental/searchHospital",
 				"method": "GET",
 				"header": [
 					{
@@ -826,7 +826,7 @@
 		{
 			"name": "Get Featured Treatments",
 			"request": {
-				"url": "localhost:1337/api/v1/getFeaturedtreatments/GETFTDTREATMENT",
+				"url": "{{URL}}/api/v1/getFeaturedtreatments/GETFTDTREATMENT",
 				"method": "GET",
 				"header": [
 					{
@@ -851,7 +851,27 @@
 		{
 			"name": "Get highlight Treatments",
 			"request": {
-				"url": "localhost:1337/api/v1/gethighlighttreatments/10/2/GETHIGHLIGHTTRMT",
+				"url": {
+					"raw": "{{URL}}/api/v1/gethighlighttreatments/GETHIGHLIGHTTRMT?limit=3",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"gethighlighttreatments",
+						"GETHIGHLIGHTTRMT"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -876,7 +896,7 @@
 		{
 			"name": "Get Abount MEdical SEction",
 			"request": {
-				"url": "localhost:1337/api/v1/getaboutMedical/GETABTMEDICAL",
+				"url": "{{URL}}/api/v1/getaboutMedical/GETABTMEDICAL",
 				"method": "GET",
 				"header": [
 					{
@@ -901,7 +921,7 @@
 		{
 			"name": "Post OfficeLocation",
 			"request": {
-				"url": "http://localhost:1337/api/v1/post/officelocations/officelocation",
+				"url": "{{URL}}/api/v1/post/officelocations/officelocation",
 				"method": "POST",
 				"header": [
 					{
@@ -998,7 +1018,7 @@
 		{
 			"name": "Get OfficeLocation",
 			"request": {
-				"url": "http://localhost:1337/api/v1/get/officelocations/officelocation",
+				"url": "{{URL}}/api/v1/get/officelocations/officelocation",
 				"method": "GET",
 				"header": [
 					{
@@ -1083,6 +1103,372 @@
 						{
 							"key": "officeTimings",
 							"value": "Mon-Sat 9 Am - 5PM IST",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post NewsSection",
+			"request": {
+				"url": "{{URL}}/api/v1/post/newssection/NEWSSECTION",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTkVXU1NFQ1RJT04iLCJpYXQiOjE1MDUyMzQ0NDl9.WKC4AAzeJMS5BFye3ayNybsrEpmJybYFqVBTzH9SYeA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newsTitle",
+							"value": "Health Toursim in Rise",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsImagepath",
+							"value": "www.indiatourism.gov.in",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsContent",
+							"value": "health toursim is in Rise in India as per the Govt report released",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsDisableflag",
+							"value": "N",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get NewsSection",
+			"request": {
+				"url": "{{URL}}/api/v1/get/newssection/NEWSSECTION",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTkVXU1NFQ1RJT04iLCJpYXQiOjE1MDUyMzQ0NDl9.WKC4AAzeJMS5BFye3ayNybsrEpmJybYFqVBTzH9SYeA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newsTitle",
+							"value": "Hospitals join hands to promote Kerala as a medical tourism destination",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsImagepath",
+							"value": "http://www.thehindubusinessline.com/news/national/hospitals-join-hands-to-promote-kerala-as-a-medical-tourism-destination/article8209559.ece",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsContent",
+							"value": "In an effort to promote healthcare tourism, leading hospitals in Kerala have formed a consortium to promote the State as a medical value travel destination worldwide.The society, which was formed following the Kerala Health Tourism Summit, with 14 NABH hospitals from across the State, has elected its first set of office-bearers.The objective of the society is to place Kerala on the global medical value travel map and also promote the State as a healthcare hub in the country by 2020. Kerala, at present, attracts only 5-7 per cent of medical value travel, which is equivalent to $200 million annually.Kerala has the potential to increase the inflow of medical value tourists by 10–15 per cent. The society believes that this can be achieved by 2020 with a strong, focused marketing strategy.At present Kerala has 2 JCI accredited, 2 Australian accredited and 24 NABH accredited hospitals. The society will also work towards the vision of NABH accreditation for all private and public hospitals by 2020, ensuring maximum inflow of medical value tourists to Kerala.",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsDisableflag",
+							"value": "N",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post TreatmentDescription",
+			"request": {
+				"url": "{{URL}}/api/v1/post/treatmentdescription/TREATMENTDESC",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTkVXU1NFQ1RJT04iLCJpYXQiOjE1MDUyMzQ0NDl9.WKC4AAzeJMS5BFye3ayNybsrEpmJybYFqVBTzH9SYeA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "treatmentName",
+							"value": "Dental ",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "procedureName",
+							"value": "Dental Implant",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "displayImagepath",
+							"value": "/assets/pic/img/path.img",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "treatmentDescription",
+							"value": "this will rejuvenate body and give flwoadsasdfgkhflknfknsvsdvhasljaslhvaslhvsdl fd,lhasdfhsdghsdfg lfhasdhfafsdof fajsfasdfasdfhasdo kfjshfdaphfhaspdfasf fjhfdasfphasdf jpsjdfpjsdapfuasdpf jpsjfdpujfpasdpfas fjaspudfpasufpasdjfpasd ljfpasdjfpasdujf[",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "shortDescription",
+							"value": "This will help people to look for dental implants",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "hospitalStay",
+							"value": "3days",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "surgicalTime",
+							"value": "4days",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "postFollowupFrequency",
+							"value": "2days",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isDisable",
+							"value": "N",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "healingTime",
+							"value": "15days",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get TreatmentDescription",
+			"request": {
+				"url": "{{URL}}/api/v1/get/treatmentdescription/Dental/TREATMENTDESC",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTkVXU1NFQ1RJT04iLCJpYXQiOjE1MDUyMzQ0NDl9.WKC4AAzeJMS5BFye3ayNybsrEpmJybYFqVBTzH9SYeA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newsTitle",
+							"value": "Hospitals join hands to promote Kerala as a medical tourism destination",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsImagepath",
+							"value": "http://www.thehindubusinessline.com/news/national/hospitals-join-hands-to-promote-kerala-as-a-medical-tourism-destination/article8209559.ece",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsContent",
+							"value": "In an effort to promote healthcare tourism, leading hospitals in Kerala have formed a consortium to promote the State as a medical value travel destination worldwide.The society, which was formed following the Kerala Health Tourism Summit, with 14 NABH hospitals from across the State, has elected its first set of office-bearers.The objective of the society is to place Kerala on the global medical value travel map and also promote the State as a healthcare hub in the country by 2020. Kerala, at present, attracts only 5-7 per cent of medical value travel, which is equivalent to $200 million annually.Kerala has the potential to increase the inflow of medical value tourists by 10–15 per cent. The society believes that this can be achieved by 2020 with a strong, focused marketing strategy.At present Kerala has 2 JCI accredited, 2 Australian accredited and 24 NABH accredited hospitals. The society will also work towards the vision of NABH accreditation for all private and public hospitals by 2020, ensuring maximum inflow of medical value tourists to Kerala.",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsDisableflag",
+							"value": "N",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post Our Services Details to DB",
+			"request": {
+				"url": "{{URL}}/api/v1/post/ourservices/OURSERVICES",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT1VSU0VSVklDRVMiLCJpYXQiOjE1MDU5NjY3NTB9.0GlBMqkhAXELN0-m6z5ES6K9zcf-_M0EYT0z9FH43ig",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serviceName",
+							"value": "Accomodation & Transport ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceShortform",
+							"value": "ACCOMODATION",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceDescription",
+							"value": "With sundry sceneries and cultural groups, a scrumptious food and rich heritage, India offers a real cultural experience for any tourist thronging from different parts of the world. From the majestic havelis of Rajasthan and the snow capped mountains of Himalayas, to a glimpse of different types of wild creatures at the most renowned national parks and pristine beaches of Kerala, all of these can be scouted only in the beautiful land of India. Create memoirs that last a lifetime by exploring the much admired places of India. We tender affordable and attractive India travel packages to suit the needs of every tourist.  Choosing any of these holiday packages will provide you with wholesome experiences that you will love to treasure with your friends in joyful time",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isDisable",
+							"value": "N",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Our Services",
+			"request": {
+				"url": "{{URL}}/api/v1/get/ourservices/ACCOMODATION/OURSERVICES",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT1VSU0VSVklDRVMiLCJpYXQiOjE1MDU5NjY3NTB9.0GlBMqkhAXELN0-m6z5ES6K9zcf-_M0EYT0z9FH43ig",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serviceName",
+							"value": "Accomodation & Transport ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceShortform",
+							"value": "ACCOMODATION",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceDescription",
+							"value": "With sundry sceneries and cultural groups, a scrumptious food and rich heritage, India offers a real cultural experience for any tourist thronging from different parts of the world. From the majestic havelis of Rajasthan and the snow capped mountains of Himalayas, to a glimpse of different types of wild creatures at the most renowned national parks and pristine beaches of Kerala, all of these can be scouted only in the beautiful land of India. Create memoirs that last a lifetime by exploring the much admired places of India. We tender affordable and attractive India travel packages to suit the needs of every tourist.  Choosing any of these holiday packages will provide you with wholesome experiences that you will love to treasure with your friends in joyful time",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isDisable",
+							"value": "N",
 							"description": "",
 							"type": "text"
 						}
