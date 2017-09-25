@@ -1369,7 +1369,7 @@
 			"response": []
 		},
 		{
-			"name": "Post Our Services Details to DB",
+			"name": "Post ourservices details to DB",
 			"request": {
 				"url": "{{URL}}/api/v1/post/ourservices/OURSERVICES",
 				"method": "POST",
@@ -1424,9 +1424,143 @@
 			"response": []
 		},
 		{
-			"name": "Get Our Services",
+			"name": "Get Home Page details",
 			"request": {
 				"url": "{{URL}}/api/v1/get/ourservices/ACCOMODATION/OURSERVICES",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT1VSU0VSVklDRVMiLCJpYXQiOjE1MDU5NjY3NTB9.0GlBMqkhAXELN0-m6z5ES6K9zcf-_M0EYT0z9FH43ig",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serviceName",
+							"value": "Accomodation & Transport ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceShortform",
+							"value": "ACCOMODATION",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceDescription",
+							"value": "With sundry sceneries and cultural groups, a scrumptious food and rich heritage, India offers a real cultural experience for any tourist thronging from different parts of the world. From the majestic havelis of Rajasthan and the snow capped mountains of Himalayas, to a glimpse of different types of wild creatures at the most renowned national parks and pristine beaches of Kerala, all of these can be scouted only in the beautiful land of India. Create memoirs that last a lifetime by exploring the much admired places of India. We tender affordable and attractive India travel packages to suit the needs of every tourist.  Choosing any of these holiday packages will provide you with wholesome experiences that you will love to treasure with your friends in joyful time",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isDisable",
+							"value": "N",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post home page details to DB",
+			"request": {
+				"url": "{{URL}}/api/v1/post/homepagedetails/COMPANYDESC",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT1VSU0VSVklDRVMiLCJpYXQiOjE1MDU5NjY3NTB9.0GlBMqkhAXELN0-m6z5ES6K9zcf-_M0EYT0z9FH43ig",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerCareno",
+							"value": "+919620272105",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "whatsappCustomercareno",
+							"value": "+919745895105",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fburlLink",
+							"value": "https://www.facebook.com/",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "twitterurlLink",
+							"value": "https://www.twitter.com/",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "linkedlinurlLink",
+							"value": "https://www.linkedlin.com/",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instagramurlLink",
+							"value": "https://www.instagram.com/",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "whyIndiaDesc",
+							"value": "this is my India , i hope it will turn to be a better country soon",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "whymedinovitaDesc",
+							"value": "this seems to works man !",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Home Page details",
+			"request": {
+				"url": "{{URL}}/api/v1/get/homepagedetails/COMPANYDESC",
 				"method": "GET",
 				"header": [
 					{
