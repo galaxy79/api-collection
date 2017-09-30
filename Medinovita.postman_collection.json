@@ -1,0 +1,1671 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Medinovita",
+		"_postman_id": "a46eef16-5de6-9fff-494b-a21eea0630b3",
+		"description": "API collection powering medinovita application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Doctors Offering to existing hospital",
+			"request": {
+				"url": "{{URL}}/api/v1/add/doctorsofferingtreatment/Renai MediCity/city/Indian/IVF1/posthospital",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXIiLCJpYXQiOjE1MDI3MjcxMjh9.WW9L8cXcasrXBcgNYfLTaWQkMuhrPuraZbvjqF_-gbw",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "doctorName",
+							"value": "dr.vp1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profilePicDirectory",
+							"value": "smdir",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "medinovitaDoctorRating",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specialityName",
+							"value": "smspecila",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Hospital Record",
+			"request": {
+				"url": "http://localhost:1337/api/v1/add/hospitalrecord/posthospital",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdEhvc3BpdGFsIiwiaWF0IjoxNTAyMjEzOTcwfQ.zh_YI9XOcKKYU8a3h7LSzfU5q3Mx8nxxSfKNTKnwbXA",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hospitalname",
+							"value": "Renai",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_website",
+							"value": "www.xyz.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_contactpersonname",
+							"value": "libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_addressline1",
+							"value": "Line1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_city",
+							"value": "Kochi",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_country",
+							"value": "India",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalcontact_postalcode",
+							"value": "686577",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "accreditation_jci",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "accreditation_nabh",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "accreditation_nabl",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hospitalrating_userrating",
+							"value": "4",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "hospitalrating_medinovitarating",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "procedureName",
+							"value": "Root Canal",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "costUpperBound",
+							"value": "10000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "costLowerBound",
+							"value": "20000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "departmentName",
+							"value": "Dental",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "doctorName",
+							"value": "Dr.Gerorge",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profilePicDirectory",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "medinovitaDoctorRating",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specialityName",
+							"value": "MBBS,MD",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Hospital Details",
+			"request": {
+				"url": "{{URL}}/api/v1/update/basicHospitalDetails/Renai/Kochi/India/puthospital",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicHV0VXNlciIsImlhdCI6MTUwMzIxNTIzNH0.3lrLwwnHxJL4zjo7e1ntm8lvuNv8IycZlFqR7eoRfAk",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hospitalcontact.addressline1",
+							"value": "address line new",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "New Treatment to existing hospital",
+			"request": {
+				"url": "{{URL}}/api/v1/add/newtreatment/Renai/Kochi/India/posthospital",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXIiLCJpYXQiOjE1MDI3MjcxMjh9.WW9L8cXcasrXBcgNYfLTaWQkMuhrPuraZbvjqF_-gbw",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "procedureName",
+							"value": "IVF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "costUpperBound",
+							"value": "25000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "costLowerBound",
+							"value": "10000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "doctorName",
+							"value": "Dr.vp2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profilePicDirectory",
+							"value": "smdir1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "medinovitaDoctorRating",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specialityName",
+							"value": "MBBS",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "departmentName",
+							"value": "Gynic",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update user info",
+			"request": {
+				"url": "{{URL}}/api/v1/update/userInfo/nit.libin@gmail.com/putuser",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicHV0VXNlciIsImlhdCI6MTUwMjAzMDIyNH0.o-lu607gGDqcNBDneCEDcLJZodAiWsHtccvIdbG3rzc",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "primaryphonenumber",
+							"value": "9742123446",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "secondaryphonenumber",
+							"value": "9743122233",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user",
+			"request": {
+				"url": "{{URL}}/api/v1/add/userInfo/postuser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXIiLCJpYXQiOjE1MDE5OTc2MDd9.Wn1iexjdOdrNTAef69QCzUXveG5_F8-kIzIetCGIfpg",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "emailID",
+							"value": "nit.libin@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "loginPassword",
+							"value": "medinovita",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isdCode",
+							"value": "91",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "primaryPhonenumber",
+							"value": "9740177277",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "secondaryPhonenumber",
+							"value": "9740177377",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "whatsappPhonenumber",
+							"value": "9740177477",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "userTitle",
+							"value": "Mr.",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "middleName",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nickName",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Sebastian",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "dateofbirth",
+							"value": "18-03-1985",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "preferredContacttime",
+							"value": "Morning",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "preferredContactmethod",
+							"value": "Phone",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "emailVerified",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "userPicdir",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "userType",
+							"value": "Patient",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "agentType",
+							"value": "Individual",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressType",
+							"value": "Communication",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "addressLine1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "addressLine2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "City",
+							"value": "City",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "postalCode",
+							"value": "686577",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "residingcountry",
+							"value": "UAE",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "landmark",
+							"value": "nothing",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Token API",
+			"request": {
+				"url": "{{URL}}/api/v1/protected/token/POSTENQUIRY",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Doctprs Offering Treatment",
+			"request": {
+				"url": "{{URL}}/api/v1/add/doctorsofferingtreatment/Renai/Kochi/India/IVF/posthospital",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXIiLCJpYXQiOjE1MDI3MjcxMjh9.WW9L8cXcasrXBcgNYfLTaWQkMuhrPuraZbvjqF_-gbw",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "doctorName",
+							"value": "Dr.vp6",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profilePicDirectory",
+							"value": "dir1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "medinovitaDoctorRating",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specialityName",
+							"value": "MD",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "departmentName",
+							"value": "Gynic",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post Enquiry",
+			"request": {
+				"url": "{{URL}}/api/v1/submit/response/nit.libin@gmail.com/117727175843977/postenquiry",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXJFbnF1aXJ5IiwiaWF0IjoxNTAzNzQzMjM4fQ.Sitf19o-2tcYX4ACdEl6Oq84jcKUB3xXdPs9gc0L_e4",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mediNovitaResponse",
+							"value": "medinovita response",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "respondedBy",
+							"value": "Libin Sebastian",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "contactedMethod",
+							"value": "Both",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "emailResponseSent",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nextFollowUpDate",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "followUpAssignee",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "followUpNote",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Response Enquiry",
+			"request": {
+				"url": "{{URL}}/api/v1/submit/response/nit.libin@gmail.com/117727231145190/postenquiry",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicG9zdFVzZXJFbnF1aXJ5IiwiaWF0IjoxNTAzNzQzMjM4fQ.Sitf19o-2tcYX4ACdEl6Oq84jcKUB3xXdPs9gc0L_e4",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mediNovitaResponse",
+							"value": "medinovita response",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "respondedBy",
+							"value": "Libin Sebastian",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "contactedMethod",
+							"value": "Both",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "emailResponseSent",
+							"value": "Y",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nextFollowUpDate",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "followUpAssignee",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "followUpNote",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Treatment List",
+			"request": {
+				"url": "{{URL}}/api/v1/getTreamentlist/surgery/getTreatment",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZ2V0VHJlYXRtZW50IiwiaWF0IjoxNTAyMzMyNDQ2fQ.MYdsGTNxUsJFNbWWda9gwCYvPZflfdDnWiDrA-kO-2U",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search Hospital based on Treatment",
+			"request": {
+				"url": "{{URL}}/api/v1/searchHospitaldetails/Dental/searchHospital",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZ2V0VHJlYXRtZW50IiwiaWF0IjoxNTAyMzMyNDQ2fQ.MYdsGTNxUsJFNbWWda9gwCYvPZflfdDnWiDrA-kO-2U",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Featured Treatments",
+			"request": {
+				"url": "{{URL}}/api/v1/getFeaturedtreatments/GETFTDTREATMENT",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiR0VURlREVFJFQVRNRU5UIiwiaWF0IjoxNTAzNDkyMzkzfQ.TmoIr1Gic9lEgQvHfWQAB1zDxf2mVrynoPiyo26h-A8",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"targetName\" : \"ZQAMTV\",\r\n   \"numberOfReturnParams\" : 1,\r\n   \"arguments\":[\"POS\", \"ACN:290815793,CID:12450551155,TAMT:10,MTDNME:KMART3454,CITY:PHILADELPHIA,STATE:PA,CNTRY:US,BIT18:5310,BIT32:1561,BIT48:000067190034546,BIT120:KMART3454\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get highlight Treatments",
+			"request": {
+				"url": {
+					"raw": "{{URL}}/api/v1/gethighlighttreatments/GETHIGHLIGHTTRMT?limit=3",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"gethighlighttreatments",
+						"GETHIGHLIGHTTRMT"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiR0VUQUJUTUVESUNBTCIsImlhdCI6MTUwMzcxMTk0M30.pkh5o5sqfoBCfK3InpyuA3K98cvqNdctquRNiQN1kR8",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"targetName\" : \"ZQAMTV\",\r\n   \"numberOfReturnParams\" : 1,\r\n   \"arguments\":[\"POS\", \"ACN:290815793,CID:12450551155,TAMT:10,MTDNME:KMART3454,CITY:PHILADELPHIA,STATE:PA,CNTRY:US,BIT18:5310,BIT32:1561,BIT48:000067190034546,BIT120:KMART3454\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Abount MEdical SEction",
+			"request": {
+				"url": "{{URL}}/api/v1/getaboutMedical/GETABTMEDICAL",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiR0VUQUJUTUVESUNBTCIsImlhdCI6MTUwMzcxMTk0M30.pkh5o5sqfoBCfK3InpyuA3K98cvqNdctquRNiQN1kR8",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"targetName\" : \"ZQAMTV\",\r\n   \"numberOfReturnParams\" : 1,\r\n   \"arguments\":[\"POS\", \"ACN:290815793,CID:12450551155,TAMT:10,MTDNME:KMART3454,CITY:PHILADELPHIA,STATE:PA,CNTRY:US,BIT18:5310,BIT32:1561,BIT48:000067190034546,BIT120:KMART3454\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post OfficeLocation",
+			"request": {
+				"url": "{{URL}}/api/v1/post/officelocations/officelocation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT0ZGSUNFTE9DQVRJT04iLCJpYXQiOjE1MDQ1MjM2ODl9.P6Fep4p6vOve-gZrdW6w5CMdgIrVg76yy6fb8ocwUiM",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "country",
+							"value": "Australia",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Melbourne",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "Navi Mumbai",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeType",
+							"value": "Commercial",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "landMark",
+							"value": "Nera Lulu Mall 1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "postCode",
+							"value": "682021",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeEmailId",
+							"value": "abcd@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeContactNumber",
+							"value": "9740177277",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "contactPerson",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeTimings",
+							"value": "Mon-Sat 9 Am - 5PM IST",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get OfficeLocation",
+			"request": {
+				"url": "{{URL}}/api/v1/get/officelocations/officelocation",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT0ZGSUNFTE9DQVRJT04iLCJpYXQiOjE1MDQ1MjM2ODl9.P6Fep4p6vOve-gZrdW6w5CMdgIrVg76yy6fb8ocwUiM",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "country",
+							"value": "USA",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Newyork",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "Navi Mumbai",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeType",
+							"value": "Commercial",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "landMark",
+							"value": "Nera Lulu Mall 1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "postCode",
+							"value": "682021",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeEmailId",
+							"value": "abcd@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeContactNumber",
+							"value": "9740177277",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "contactPerson",
+							"value": "Libin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "officeTimings",
+							"value": "Mon-Sat 9 Am - 5PM IST",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post SiteTraffic",
+			"request": {
+				"url": "{{URL}}/api/v1/post/newssection/NEWSSECTION",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTkVXU1NFQ1RJT04iLCJpYXQiOjE1MDUyMzQ0NDl9.WKC4AAzeJMS5BFye3ayNybsrEpmJybYFqVBTzH9SYeA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newsTitle",
+							"value": "Health Toursim in Rise",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsImagepath",
+							"value": "www.indiatourism.gov.in",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsContent",
+							"value": "health toursim is in Rise in India as per the Govt report released",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsDisableflag",
+							"value": "N",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get NewsSection",
+			"request": {
+				"url": "{{URL}}/api/v1/get/newssection/NEWSSECTION",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTkVXU1NFQ1RJT04iLCJpYXQiOjE1MDUyMzQ0NDl9.WKC4AAzeJMS5BFye3ayNybsrEpmJybYFqVBTzH9SYeA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newsTitle",
+							"value": "Hospitals join hands to promote Kerala as a medical tourism destination",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsImagepath",
+							"value": "http://www.thehindubusinessline.com/news/national/hospitals-join-hands-to-promote-kerala-as-a-medical-tourism-destination/article8209559.ece",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsContent",
+							"value": "In an effort to promote healthcare tourism, leading hospitals in Kerala have formed a consortium to promote the State as a medical value travel destination worldwide.The society, which was formed following the Kerala Health Tourism Summit, with 14 NABH hospitals from across the State, has elected its first set of office-bearers.The objective of the society is to place Kerala on the global medical value travel map and also promote the State as a healthcare hub in the country by 2020. Kerala, at present, attracts only 5-7 per cent of medical value travel, which is equivalent to $200 million annually.Kerala has the potential to increase the inflow of medical value tourists by 10–15 per cent. The society believes that this can be achieved by 2020 with a strong, focused marketing strategy.At present Kerala has 2 JCI accredited, 2 Australian accredited and 24 NABH accredited hospitals. The society will also work towards the vision of NABH accreditation for all private and public hospitals by 2020, ensuring maximum inflow of medical value tourists to Kerala.",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsDisableflag",
+							"value": "N",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post TreatmentDescription",
+			"request": {
+				"url": "{{URL}}/api/v1/post/treatmentdescription/TREATMENTDESC",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTkVXU1NFQ1RJT04iLCJpYXQiOjE1MDUyMzQ0NDl9.WKC4AAzeJMS5BFye3ayNybsrEpmJybYFqVBTzH9SYeA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "treatmentName",
+							"value": "Dental ",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "procedureName",
+							"value": "Dental Implant",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "displayImagepath",
+							"value": "/assets/pic/img/path.img",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "treatmentDescription",
+							"value": "this will rejuvenate body and give flwoadsasdfgkhflknfknsvsdvhasljaslhvaslhvsdl fd,lhasdfhsdghsdfg lfhasdhfafsdof fajsfasdfasdfhasdo kfjshfdaphfhaspdfasf fjhfdasfphasdf jpsjdfpjsdapfuasdpf jpsjfdpujfpasdpfas fjaspudfpasufpasdjfpasd ljfpasdjfpasdujf[",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "shortDescription",
+							"value": "This will help people to look for dental implants",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "hospitalStay",
+							"value": "3days",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "surgicalTime",
+							"value": "4days",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "postFollowupFrequency",
+							"value": "2days",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isDisable",
+							"value": "N",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "healingTime",
+							"value": "15days",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get TreatmentDescription",
+			"request": {
+				"url": "{{URL}}/api/v1/get/treatmentdescription/Dental/TREATMENTDESC",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTkVXU1NFQ1RJT04iLCJpYXQiOjE1MDUyMzQ0NDl9.WKC4AAzeJMS5BFye3ayNybsrEpmJybYFqVBTzH9SYeA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newsTitle",
+							"value": "Hospitals join hands to promote Kerala as a medical tourism destination",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsImagepath",
+							"value": "http://www.thehindubusinessline.com/news/national/hospitals-join-hands-to-promote-kerala-as-a-medical-tourism-destination/article8209559.ece",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsContent",
+							"value": "In an effort to promote healthcare tourism, leading hospitals in Kerala have formed a consortium to promote the State as a medical value travel destination worldwide.The society, which was formed following the Kerala Health Tourism Summit, with 14 NABH hospitals from across the State, has elected its first set of office-bearers.The objective of the society is to place Kerala on the global medical value travel map and also promote the State as a healthcare hub in the country by 2020. Kerala, at present, attracts only 5-7 per cent of medical value travel, which is equivalent to $200 million annually.Kerala has the potential to increase the inflow of medical value tourists by 10–15 per cent. The society believes that this can be achieved by 2020 with a strong, focused marketing strategy.At present Kerala has 2 JCI accredited, 2 Australian accredited and 24 NABH accredited hospitals. The society will also work towards the vision of NABH accreditation for all private and public hospitals by 2020, ensuring maximum inflow of medical value tourists to Kerala.",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "newsDisableflag",
+							"value": "N",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post ourservices details to DB",
+			"request": {
+				"url": "{{URL}}/api/v1/post/ourservices/OURSERVICES",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT1VSU0VSVklDRVMiLCJpYXQiOjE1MDU5NjY3NTB9.0GlBMqkhAXELN0-m6z5ES6K9zcf-_M0EYT0z9FH43ig",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serviceName",
+							"value": "Accomodation & Transport ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceShortform",
+							"value": "ACCOMODATION",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceDescription",
+							"value": "With sundry sceneries and cultural groups, a scrumptious food and rich heritage, India offers a real cultural experience for any tourist thronging from different parts of the world. From the majestic havelis of Rajasthan and the snow capped mountains of Himalayas, to a glimpse of different types of wild creatures at the most renowned national parks and pristine beaches of Kerala, all of these can be scouted only in the beautiful land of India. Create memoirs that last a lifetime by exploring the much admired places of India. We tender affordable and attractive India travel packages to suit the needs of every tourist.  Choosing any of these holiday packages will provide you with wholesome experiences that you will love to treasure with your friends in joyful time",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isDisable",
+							"value": "N",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Home Page details",
+			"request": {
+				"url": "{{URL}}/api/v1/get/ourservices/ACCOMODATION/OURSERVICES",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT1VSU0VSVklDRVMiLCJpYXQiOjE1MDU5NjY3NTB9.0GlBMqkhAXELN0-m6z5ES6K9zcf-_M0EYT0z9FH43ig",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serviceName",
+							"value": "Accomodation & Transport ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceShortform",
+							"value": "ACCOMODATION",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceDescription",
+							"value": "With sundry sceneries and cultural groups, a scrumptious food and rich heritage, India offers a real cultural experience for any tourist thronging from different parts of the world. From the majestic havelis of Rajasthan and the snow capped mountains of Himalayas, to a glimpse of different types of wild creatures at the most renowned national parks and pristine beaches of Kerala, all of these can be scouted only in the beautiful land of India. Create memoirs that last a lifetime by exploring the much admired places of India. We tender affordable and attractive India travel packages to suit the needs of every tourist.  Choosing any of these holiday packages will provide you with wholesome experiences that you will love to treasure with your friends in joyful time",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isDisable",
+							"value": "N",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post home page details to DB",
+			"request": {
+				"url": "{{URL}}/api/v1/post/homepagedetails/COMPANYDESC",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT1VSU0VSVklDRVMiLCJpYXQiOjE1MDU5NjY3NTB9.0GlBMqkhAXELN0-m6z5ES6K9zcf-_M0EYT0z9FH43ig",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerCareno",
+							"value": "+919620272105",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "whatsappCustomercareno",
+							"value": "+919745895105",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fburlLink",
+							"value": "https://www.facebook.com/",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "twitterurlLink",
+							"value": "https://www.twitter.com/",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "linkedlinurlLink",
+							"value": "https://www.linkedlin.com/",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instagramurlLink",
+							"value": "https://www.instagram.com/",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "whyIndiaDesc",
+							"value": "this is my India , i hope it will turn to be a better country soon",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "whymedinovitaDesc",
+							"value": "this seems to works man !",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Home Page details",
+			"request": {
+				"url": "{{URL}}/api/v1/get/homepagedetails/COMPANYDESC",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiT1VSU0VSVklDRVMiLCJpYXQiOjE1MDU5NjY3NTB9.0GlBMqkhAXELN0-m6z5ES6K9zcf-_M0EYT0z9FH43ig",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serviceName",
+							"value": "Accomodation & Transport ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceShortform",
+							"value": "ACCOMODATION",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "serviceDescription",
+							"value": "With sundry sceneries and cultural groups, a scrumptious food and rich heritage, India offers a real cultural experience for any tourist thronging from different parts of the world. From the majestic havelis of Rajasthan and the snow capped mountains of Himalayas, to a glimpse of different types of wild creatures at the most renowned national parks and pristine beaches of Kerala, all of these can be scouted only in the beautiful land of India. Create memoirs that last a lifetime by exploring the much admired places of India. We tender affordable and attractive India travel packages to suit the needs of every tourist.  Choosing any of these holiday packages will provide you with wholesome experiences that you will love to treasure with your friends in joyful time",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isDisable",
+							"value": "N",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post SiteTraffic",
+			"request": {
+				"url": "{{URL}}/api/v1/post/sitetraffic/SITETRAFFIC",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bGliaW46bGliaW4=",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTkVXU1NFQ1RJT04iLCJpYXQiOjE1MDUyMzQ0NDl9.WKC4AAzeJMS5BFye3ayNybsrEpmJybYFqVBTzH9SYeA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "browserType",
+							"value": "Chrome",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "sourceipAddress",
+							"value": "10.20.105.89",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "datetimeAccessed",
+							"value": "09/30/2017",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "country",
+							"value": "null",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
